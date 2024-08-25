@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>JavaScript Fundamentals – Part 1</title>
+    <!-- Latest compiled and minified CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- <style>
+      body {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        background: linear-gradient(to top left, #28b487, #7dd56f);
+      }
+      h1 {
+        font-family: sans-serif;
+        font-size: 50px;
+        line-height: 1.3;
+        width: 100%;
+        padding: 30px;
+        text-align: center;
+        color: white;
+      }
+    </style> -->
+  </head>
+  <body style="background-color: whitesmoke">
+    <!-- <h1>JavaScript Fundamentals – Part 1</h1> -->
+    <div class="container-fluid p-4" style="height: 100vh">
+      <div class="container text-center pt-3 pb-3">
+        <div class="row justify-content-between">
+          <div class="col-5 text-start">
+            <button type="button" class="btn btn-secondary btn-lg restartGame">
+              Start Again
+            </button>
+          </div>
+          <div class="col-5 text-end">(Between 1 and 20)</div>
+        </div>
+      </div>
+
+      <div class="container text-center pt-3 pb-3">
+        <div style="font-size: 2em; font-weight: bold">Guess My number</div>
+        <br />
+        <div class="pt-2">
+          <span
+            style="
+              background-color: grey;
+              font-weight: bold;
+              font-size: 3em;
+              color: white;
+            "
+            class="p-4 displayValue"
+            >?</span
+          >
+        </div>
+      </div>
+
+      <div class="container text-center pt-5 pb-3">
+        <div class="row justify-content-evenly">
+          <div class="col-5 text-center">
+            <div class="form-floating mb-3">
+              <input
+                type="email"
+                class="form-control enteredNumber"
+                id="floatingInput"
+                placeholder="name@example.com"
+              />
+              <label for="floatingInput" class="">Enter Number</label>
+            </div>
+            <button type="button" class="btn btn-secondary btn-lg checkNumber">
+              Check Number
+            </button>
+          </div>
+          <div class="col-5 text-center" style="font-weight: bold">
+            <div class="numberResult">Guess Number</div>
+            <br />
+            <div>Score: <span class="currentScore">20</span></div>
+            <br />
+            <div>High Score: <span class="highScore">0</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
